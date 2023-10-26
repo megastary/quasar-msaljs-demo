@@ -2,7 +2,9 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-toolbar-title> Quasar MSAL.js Demo </q-toolbar-title>
+        <q-toolbar-title>
+          Elektronický rezervační systém elektrokol
+        </q-toolbar-title>
 
         <SignOutButton v-if="isAuthenticated"></SignOutButton>
         <SignInButton v-else></SignInButton>

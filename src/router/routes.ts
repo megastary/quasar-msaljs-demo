@@ -14,7 +14,7 @@ const routes: RouteRecordRaw[] = [
         },
       },
       {
-        path: 'profilenoguard',
+        path: 'form',
         component: () => import('pages/ProfileNoGuardPage.vue'),
       },
     ],

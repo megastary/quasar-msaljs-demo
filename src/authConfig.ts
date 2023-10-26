@@ -3,10 +3,10 @@ import { LogLevel, PublicClientApplication } from '@azure/msal-browser';
 // Config object to be passed to Msal on creation
 export const msalConfig = {
   auth: {
-    clientId: '<your-client-id>',
-    authority: 'https://login.microsoftonline.com/<your-tenant-id>',
-    // redirectUri: '/', // Must be registered as a SPA redirectURI on your app registration
-    // postLogoutRedirectUri: '/' // Must be registered as a SPA redirectURI on your app registration
+    clientId: '924d0e74-aba0-4fae-a190-c46a71524c6e',
+    authority: 'https://login.microsoftonline.com/906f66d2-9545-48f8-be26-ff9eab6126be',
+    redirectUri: '/', // Must be registered as a SPA redirectURI on your app registration
+    postLogoutRedirectUri: '/' // Must be registered as a SPA redirectURI on your app registration
   },
   cache: {
     cacheLocation: 'localStorage'
@@ -49,5 +49,6 @@ export const loginRequest = {
 // Add here the endpoints for MS Graph API services you would like to use.
 export const graphConfig = {
   graphMeEndpoint: 'https://graph.microsoft.com/v1.0/me',
+  graphMeDetailsEndpoint: 'https://graph.microsoft.com/v1.0/me?$select=id,displayName,onPremisesExtensionAttributes',
   graphMePhoto: 'https://graph.microsoft.com/v1.0/me/photo/$value'
 };
